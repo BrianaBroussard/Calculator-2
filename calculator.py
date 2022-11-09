@@ -13,25 +13,25 @@ while True:
         print("You're done")
         break 
     else:
-        num1 = tokens[1]
+        num1 = float(tokens[1])
         if len(tokens) < 3:
             num2 = "0"
         else:
-            num2 = tokens[2]
+            num2 = float(tokens[2])
     if operands == '+':
-        result = add(float(num1), float(num2))    
+        result = add(num1, num2)    
     elif operands == '-':
-        result = subtract(float(num1), float(num2)) 
+        result = subtract(num1, num2) 
     elif operands == '*':
-        result = multiply(float(num1), float(num2)) 
+        result = multiply(num1, num2) 
     elif operands == '/':
-        result = divide(float(num1), float(num2))  
+        result = divide(num1, num2)  
     elif operands == 'square':
-        result = square(float(num1))       
+        result = square(num1)       
     elif operands == 'cube':
-        result = cube(float(num1))
+        result = cube(num1)
     elif operands == 'pow':
-        result = power(float(num1), float(num2)) 
+        result = power(num1, num2) 
     elif operands == 'mod':
-        result = mod(float(num1), float(num2)) 
+        result = mod(num1, num2) 
     print(result) 
